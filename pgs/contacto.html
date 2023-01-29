@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title">Charlotte</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../index.html">Inicios</a></li>
+            <li><a href="turismo.html">Turismo</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contacto">
+      <h1>Contacto</h1>
+
+      <div>
+        <p>
+          ¿Necesitas más información sobre La Ciudad Reina? Nuestro equipo está
+          listo para ayudarte.
+        </p>
+        <p>Completa el formulario y nos pondremos en contacto contigo.</p>
+        <p>
+          También puedes comunicarte con las oficinas administrativas de
+          <abbr title="Charlotte Regional Visitors Authority">CRVA</abbr> por
+          teléfono o correo electrónico utilizando la información a
+          continuación:
+        </p>
+
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <p>
+                  <span lang="en">Charlotte Regional Visitors Authority</span>
+                </p>
+              </li>
+              <li>501 South College Street</li>
+              <li>Charlotte, NC 28202</li>
+              <li>(704) 339-6040</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <p><span lang="en">Visit Charlotte</span></p>
+              </li>
+              <li>501 South College Street</li>
+              <li>Charlotte, NC 28202</li>
+              <li>(704) 339-6040</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="formulario">
+        <form method="post" enctype="multipart/form-data">
+          <div class="input-group">
+            <input type="text" name="nombre" id="name" required class="input" />
+            <label for="name" class="input-label">Nombre*</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              required
+              class="input"
+            />
+            <label for="apellido" class="input-label">Apellido*</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="input"
+            />
+            <label for="email" class="input-label">E-mail*</label>
+          </div>
+
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="20"
+            rows="5"
+            placeholder="Mensaje"
+          ></textarea>
+          <!-- <label for="mensaje" class="input-label">Mensaje</label> -->
+
+          <input type="submit" id="enviar" value="Enviar" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="redes">
+        <li id="ig">
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li id="fb">
+          <a href="https://Facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li id="tw">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </li>
+      </ul>
+      <div class="derechos">
+        <p>
+          © 2023
+          <span lang="en">Charlotte Regional Visitors Authority.</span> Todos
+          los derechos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
