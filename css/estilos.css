@@ -37,6 +37,7 @@ header {
   background-color: #0a2c46;
   position: sticky;
   top: 0;
+  z-index: 200;
 }
 
 .navbar {
@@ -111,6 +112,15 @@ header {
   flex-direction: column;
 }
 
+.navbar div:nth-child(1) {
+  /*  logo */
+  width: 120px;
+  height: 35px;
+  background-image: url(../img/logo1.png);
+  font-size: 0;
+  margin-top: 5px;
+}
+
 /* ----------------- fin de header----------------- */
 /* ----------------- Footer----------------- */
 footer {
@@ -123,16 +133,46 @@ footer {
 }
 
 .redes {
-  width: 320px;
+  width: 100%;
+  max-width: 280px;
+  padding: 0 20px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  /* padding: 0; */
   margin-bottom: 40px;
 }
 
-footer a {
+/* footer a {
   color: white;
+} */
+
+.redes li a {
+  /* color: white; */
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 0px;
+  background-color: #f4f2e7;
+  background: url(../img/socialmedia.png);
+}
+
+.redes #ig a:hover {
+  background-position: 0px -42px;
+}
+
+.redes #fb a {
+  background-position: -42px 0px;
+}
+
+.redes #fb a:hover {
+  background-position: -42px -42px;
+}
+.redes #tw a {
+  background-position: -84px 0px;
+}
+.redes #tw a:hover {
+  background-position: -84px -42px;
 }
 
 /* ----------------- fin de footer----------------- */
@@ -153,12 +193,12 @@ footer a {
 }
 
 .parteunoencabezado {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   /* margin-top: 100px; */
   letter-spacing: 3px;
   text-transform: uppercase;
   display: block;
-  padding: 0px;
+  padding-bottom: 6px;
   /* line-height: 60px; */
   margin: auto;
   /* padding-top: 300px; */
@@ -167,7 +207,7 @@ footer a {
 }
 
 .partedosencabezado {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   text-transform: capitalize;
   font-family: "charlotte_southernsouthern";
   display: block;
@@ -176,9 +216,17 @@ footer a {
   color: white;
 }
 
-button {
+.button {
   padding: 5px 10px;
-  margin-top: 20px;
+  margin-top: 60px;
+  transition: all 0.35s ease;
+  width: 120px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.button:hover {
+  transform: translateY(5px);
 }
 
 .cuerpo {
@@ -189,7 +237,7 @@ button {
 }
 
 .tarjetashome {
-  padding: 0px;
+  padding: 20px 0;
   /* width: 300px; */
   text-align: center;
   overflow: hidden;
@@ -198,13 +246,21 @@ button {
 }
 
 .tarjetashome div {
-  width: 100%;
+  width: 90%;
   height: 80px;
   margin: 16px auto;
   line-height: 80px;
   background-position: center;
   background-size: cover;
-  transition: 0.7s;
+  transition: all 0.4s ease;
+}
+
+.tarjetashome div:hover,
+.tarjetashome div:focus {
+  transform: translateY(5px);
+  /* background-image: none; */
+  /* background-color: #1c4c71 !important; */
+  box-shadow: inset 0 -4em 0 0 #1c4c71;
 }
 
 .tarjetashome div a {
@@ -217,6 +273,7 @@ button {
 
 .tarjeta1 {
   background-image: url(../img/tarjeta1.jpg);
+  background-color: #1c4c71 !important;
 }
 .tarjeta2 {
   background-image: url(../img/tarjeta2.jpg);
@@ -226,9 +283,29 @@ button {
 }
 
 .video {
-  width: 550px;
-  padding-top: 100px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.video > p {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
   margin: auto;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ----------------- fin de inicio----------------- */
@@ -338,6 +415,7 @@ button {
   border: 2px solid #9d2e27;
   width: 240px;
 }
+
 .input-label {
   position: absolute;
   top: 10px;
@@ -450,6 +528,11 @@ textarea {
     justify-content: space-between;
   }
 
+  .navbar div:nth-child(1) {
+    /*  logo */
+    margin-top: 0;
+  }
+
   .toggle-button {
     display: none;
   }
@@ -470,6 +553,71 @@ textarea {
   }
 
   .navbar-links ul li a {
-    padding: 0.9rem;
+    padding: 0.1em 0.9rem;
+    position: relative;
+    display: inline-block;
+    color: #f4f2e7a1;
+  }
+
+  .pagina-activa {
+    color: #f4f2e7 !important;
+  }
+
+  .navbar-links li:hover a {
+    background-color: transparent;
+    color: #f4f2e7;
+    /* height: 48px; */
+  }
+
+  .navbar-links ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f4f2e7;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 0.25s;
+  }
+
+  .navbar-links ul li a:hover::before {
+    scale: 1;
+    transform-origin: left;
+  }
+
+  .iframe-container {
+    width: 696px;
+    height: 388px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1140px) {
+  .tarjetashome div {
+    width: 340px;
+    height: 340px;
+    margin: 0 12px;
+    line-height: 340px;
+  }
+
+  .tarjeta1 {
+    background-image: url(../img/tarjeta1big.jpg);
+  }
+  .tarjeta2 {
+    background-image: url(../img/tarjeta2big.jpg);
+  }
+  .tarjeta3 {
+    background-image: url(../img/tarjeta3big.jpg);
+  }
+
+  .tarjetashome div:hover,
+  .tarjetashome div:focus {
+    transform: translateY(5px);
+    /* background-image: none; */
+    /* background-color: #1c4c71 !important; */
+    box-shadow: inset 0 -340px 0 0 #1c4c71;
   }
 }
