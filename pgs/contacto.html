@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Guía oficial de Charlotte</title>
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
@@ -18,96 +18,164 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="../index.html">Inicios</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="turismo.html">Turismo</a></li>
             <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" class="pagina-activa">Más información</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="contacto">
-      <h1>Contacto</h1>
-
-      <div>
-        <p>
-          ¿Necesitas más información sobre La Ciudad Reina? Nuestro equipo está
-          listo para ayudarte.
-        </p>
-        <p>Completa el formulario y nos pondremos en contacto contigo.</p>
-        <p>
-          También puedes comunicarte con las oficinas administrativas de
-          <abbr title="Charlotte Regional Visitors Authority">CRVA</abbr> por
-          teléfono o correo electrónico utilizando la información a
-          continuación:
-        </p>
-
-        <ul>
-          <li>
-            <ul>
-              <li>
-                <p>
-                  <span lang="en">Charlotte Regional Visitors Authority</span>
-                </p>
-              </li>
-              <li>501 South College Street</li>
-              <li>Charlotte, NC 28202</li>
-              <li>(704) 339-6040</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <p><span lang="en">Visit Charlotte</span></p>
-              </li>
-              <li>501 South College Street</li>
-              <li>Charlotte, NC 28202</li>
-              <li>(704) 339-6040</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="formulario">
-        <form method="post" enctype="multipart/form-data">
-          <div class="input-group">
-            <input type="text" name="nombre" id="name" required class="input" />
-            <label for="name" class="input-label">Nombre*</label>
+      <h1>Más información</h1>
+      <section>
+        <img
+          src="../img/guiacharlotte.jpg"
+          alt="Portada de la guía oficial de la ciudad de charlotte"
+        />
+        <div>
+          <div>
+            <h2>Guía oficial de la ciudad de Charlotte</h2>
+            <p>¡Consíguela grátis!</p>
           </div>
-          <div class="input-group">
-            <input
-              type="text"
-              name="apellido"
-              id="apellido"
-              required
-              class="input"
-            />
-            <label for="apellido" class="input-label">Apellido*</label>
-          </div>
-          <div class="input-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              class="input"
-            />
-            <label for="email" class="input-label">E-mail*</label>
-          </div>
+          <a
+            href="https://view.publitas.com/charlotte-regional-visitors-authority/2023-charlotte-city-guide/page/1"
+            >Leer en línea</a
+          >
+          <a href="#">Pedir una copia</a>
+        </div>
+      </section>
 
-          <textarea
-            name="mensaje"
-            id="mensaje"
-            cols="20"
-            rows="5"
-            placeholder="Mensaje"
-          ></textarea>
-          <!-- <label for="mensaje" class="input-label">Mensaje</label> -->
+      <section>
+        <div>
+          <p>
+            Publicada anualmente,
+            <strong
+              >la Guía de la ciudad de Charlotte es el mejor recurso para los
+              visitantes y residentes que buscan explorar la ciudad más grande
+              de Carolina del Norte.</strong
+            >
+            Ya sea que estés aquí por negocios, en familia o simplemente por
+            diversión, esta guía esencial de la ciudad tiene información sobre
+            eventos deportivos locales, hoteles, restaurantes nuevos y
+            emblemáticos, compras, arte y cultura, música en vivo, cervecerías,
+            transporte y más.
+          </p>
+          <p>
+            Ve la guía en línea o solicita que te envíen una copia gratuita a tu
+            casa. Las guías tardan aproximadamente tres semanas en llegar. Llama
+            al Centro de Información para Visitantes (800-231-4636) si tienes
+            preguntas.
+          </p>
+        </div>
 
-          <input type="submit" id="enviar" value="Enviar" />
-        </form>
-      </div>
+        <div>
+          <h2>Pedir una copia:</h2>
+          <form method="post" enctype="multipart/form-data">
+            <div class="input-group">
+              <input
+                type="text"
+                name="nombre"
+                id="name"
+                required
+                class="input"
+              />
+              <label for="name" class="input-label">Nombre*</label>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="email"
+                name="correo"
+                id="correo"
+                required
+                class="input"
+              />
+              <label for="correo" class="input-label">E-mail*</label>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="text"
+                name="direccion"
+                id="direccion"
+                required
+                class="input"
+              />
+              <label for="direccion" class="input-label">Dirección*</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="ciudad"
+                id="ciudad"
+                required
+                class="input"
+              />
+              <label for="ciudad" class="input-label">Ciudad*</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="estado"
+                id="estado"
+                required
+                class="input"
+              />
+              <label for="estado" class="input-label">Estado*</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="zipcode"
+                id="zipcode"
+                required
+                class="input"
+              />
+              <label for="zipcode" class="input-label">Código postal*</label>
+            </div>
+            <div class="input-group">
+              <input type="text" name="pais" id="pais" required class="input" />
+              <label for="pais" class="input-label">País*</label>
+            </div>
+
+            <div class="input-group">
+              <select
+                name="intereses"
+                id="intereses"
+                class="input"
+                multiple="multiple"
+              >
+                <option selected disabled>Intereses</option>
+                <option value="deportes">Deportes</option>
+                <option value="hospedaje">Hospedaje</option>
+                <option value="restaurantes">Restaurantes</option>
+                <option value="compras">Compras</option>
+                <option value="arte">Arte</option>
+                <option value="musica">Música</option>
+                <option value="transporte">Transporte</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="number"
+                name="cantidad"
+                id="cantidad"
+                required
+                class="input"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <label for="cantidad" class="input-label">Cantidad*</label>
+            </div>
+
+            <input type="submit" id="enviar" value="Enviar" />
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>

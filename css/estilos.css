@@ -130,6 +130,7 @@ footer {
   color: white;
   text-align: center;
   font-size: 1rem;
+  margin-top: 60px;
 }
 
 .redes {
@@ -313,7 +314,6 @@ footer {
 /* ----------------- turismo----------------- */
 
 .turismo,
-.contacto,
 .uptown {
   margin: auto;
   padding: 0 25px;
@@ -599,28 +599,114 @@ ol li div a:hover{
 
 /* ----------------- contacto----------------- */
 
+
+.contacto {
+  margin: 0;
+  /* padding: 0 25px; */
+  /* width: 100%;
+  max-width: 1150px; */
+}
+
+.contacto h1{
+  color: white;
+  background-color: #0a2c46;
+  /* padding: 30px 0; */
+  margin: 0 auto !important;
+  max-width: 1150px;
+  padding: 60px 25px 40px 25px;
+  font-size: 2.8rem;
+  line-height: 2.6rem;
+}
+
+.contacto img{
+  width: 100%;
+  max-width: 250px;
+}
+
+.contacto section:nth-of-type(1){
+  background-color: #0a2c46;
+  color: white;
+  text-align: center;
+  margin: -180px auto 0 auto;
+  padding: 200px 25px 40px 25px;
+}
+
+.contacto section:nth-of-type(1) > div div:first-child {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 40px;
+}
+
+.contacto h2 + p {
+  text-transform: uppercase;
+  text-align: center;
+  color: #b8b8b8;
+  margin: 0;
+  font-size: 0.8rem;
+  /* letter-spacing: 2px; */
+}
+
+.contacto section:nth-of-type(1) h2{
+  margin-top: 0;
+  color: #f4f2e7;
+}
+
+.contacto section:nth-of-type(1) a{
+  color: white;
+  display: inline-block;
+  height: 46px;
+  line-height: 42px;
+  text-align: center;
+  border: white 1px solid;
+  transition: all 0.25s ease;
+  width: 150px;
+  margin: 5px;
+}
+
+.contacto section:nth-of-type(1) a:hover{
+  background-color: white;
+  color: #0a2c46;
+}
+
+.contacto section:nth-of-type(2){
+  padding: 25px;
+}
+
+
+
+.contacto section:nth-of-type(2) h2{
+  color: #9d2e27;
+  margin-top: 60px;
+}
+
+
+
+
+
 .formulario {
-  width: 600px;
+  /* width: 600px; */
   margin: auto;
   margin-bottom: 50px;
 }
 
-.input-group {
+
+/* .input-group {
   position: relative;
-  display: inline-block;
-  margin-top: 6px;
-}
+  display: block; */
+  /* display: inline-block; */
+  /* margin-bottom: 6px;
+} */
 
 
-.input {
-  padding: 10px;
+/* .input {
+  padding: 16px;
   border: none;
   border-radius: 4px;
   font: inherit;
   color: #0a2c46;
   background-color: transparent;
   border: 2px solid #9d2e27;
-  width: 240px;
+  width: 100%;
 }
 
 .input-label {
@@ -630,26 +716,29 @@ ol li div a:hover{
   transform: translate (10px, 10px);
   transition: transform 1s;
   color: #9d2e27;
-  /* font-weight: bold; */
-}
+  font-weight: bold;
+} */
 
-.input:focus + .input-label,
+/* .input:focus + .input-label,
 .input:valid + .input-label {
   transform: translate(10px, -18px) scale(0.8);
   color: #9d2e27;
   padding-inline: 5px;
   background-color: #f4f2e7;
-}
+} */
 
-.input:is(:focus, :valid) {
-  /* outline-color: #9d2e27; */
+/* .input:is(:focus, :valid) {
+  outline-color: #9d2e27;
   border-color: #9d2e27;
-  /* border-radius: 1px; */
-}
-#email {
+  border-radius: 1px;
+} */
+
+
+/* #email {
   width: 508px;
-}
-input {
+} */
+
+/* input {
   outline: none;
 }
 
@@ -666,6 +755,7 @@ textarea {
   font-family: "Open Sans", sans-serif;
   color: #0a2c46;
 }
+
 
 ::placeholder {
   color: #9d2e27;
@@ -687,7 +777,11 @@ textarea {
   color: #f4f2e7;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-}
+} */
+
+
+
+
 
 /* ----------------- fin de contacto----------------- */
 
