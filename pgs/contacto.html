@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guía oficial de Charlotte</title>
+    <title>Más información</title>
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
@@ -30,20 +30,23 @@
     <main class="contacto">
       <h1>Más información</h1>
       <section>
-        <img
-          src="../img/guiacharlotte.jpg"
-          alt="Portada de la guía oficial de la ciudad de charlotte"
-        />
         <div>
+          <img
+            src="../img/guiacharlotte.jpg"
+            alt="Portada de la guía oficial de la ciudad de charlotte"
+          />
           <div>
-            <h2>Guía oficial de la ciudad de Charlotte</h2>
-            <p>¡Consíguela grátis!</p>
+            <div>
+              <h2>Guía oficial de la ciudad de Charlotte</h2>
+              <p>¡Consíguela grátis!</p>
+            </div>
+            <a
+              href="https://view.publitas.com/charlotte-regional-visitors-authority/2023-charlotte-city-guide/page/1"
+              target="_blank"
+              >Leer en línea</a
+            >
+            <a href="#formulario">Pedir una copia</a>
           </div>
-          <a
-            href="https://view.publitas.com/charlotte-regional-visitors-authority/2023-charlotte-city-guide/page/1"
-            >Leer en línea</a
-          >
-          <a href="#">Pedir una copia</a>
         </div>
       </section>
 
@@ -71,7 +74,7 @@
         </div>
 
         <div>
-          <h2>Pedir una copia:</h2>
+          <h2 id="formulario">Pedir una copia:</h2>
           <form method="post" enctype="multipart/form-data">
             <div class="input-group">
               <input
@@ -81,7 +84,7 @@
                 required
                 class="input"
               />
-              <label for="name" class="input-label">Nombre*</label>
+              <label for="name">Nombre*</label>
             </div>
 
             <div class="input-group">
@@ -92,7 +95,7 @@
                 required
                 class="input"
               />
-              <label for="correo" class="input-label">E-mail*</label>
+              <label for="correo">E-mail*</label>
             </div>
 
             <div class="input-group">
@@ -103,7 +106,7 @@
                 required
                 class="input"
               />
-              <label for="direccion" class="input-label">Dirección*</label>
+              <label for="direccion">Dirección*</label>
             </div>
             <div class="input-group">
               <input
@@ -113,7 +116,7 @@
                 required
                 class="input"
               />
-              <label for="ciudad" class="input-label">Ciudad*</label>
+              <label for="ciudad">Ciudad*</label>
             </div>
             <div class="input-group">
               <input
@@ -123,53 +126,80 @@
                 required
                 class="input"
               />
-              <label for="estado" class="input-label">Estado*</label>
+              <label for="estado">Estado*</label>
             </div>
             <div class="input-group">
               <input
-                type="text"
+                type="number"
                 name="zipcode"
                 id="zipcode"
                 required
                 class="input"
               />
-              <label for="zipcode" class="input-label">Código postal*</label>
+              <label for="zipcode">Código postal*</label>
             </div>
             <div class="input-group">
               <input type="text" name="pais" id="pais" required class="input" />
-              <label for="pais" class="input-label">País*</label>
+              <label for="pais">País*</label>
             </div>
 
-            <div class="input-group">
-              <select
-                name="intereses"
-                id="intereses"
-                class="input"
-                multiple="multiple"
-              >
-                <option selected disabled>Intereses</option>
-                <option value="deportes">Deportes</option>
-                <option value="hospedaje">Hospedaje</option>
-                <option value="restaurantes">Restaurantes</option>
-                <option value="compras">Compras</option>
-                <option value="arte">Arte</option>
-                <option value="musica">Música</option>
-                <option value="transporte">Transporte</option>
-              </select>
-            </div>
+            <div class="intereses">
+              <p>Intereses:</p>
 
-            <div class="input-group">
-              <input
-                type="number"
-                name="cantidad"
-                id="cantidad"
-                required
-                class="input"
-                min="1"
-                max="10"
-                value="1"
-              />
-              <label for="cantidad" class="input-label">Cantidad*</label>
+              <div>
+                <input type="checkbox" id="arte" name="arte" value="arte" />
+                <label for="arte">Arte</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="musica"
+                  name="musica"
+                  value="musica"
+                />
+                <label for="musica">Música</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="deportes"
+                  name="deportes"
+                  value="deportes"
+                />
+                <label for="deportes">Deportes</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="hospedaje"
+                  name="hospedaje"
+                  value="hospedaje"
+                />
+                <label for="hospedaje">Hospedaje</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="compras"
+                  name="compras"
+                  value="compras"
+                />
+                <label for="compras">Compras</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="restaurantes"
+                  name="restaurantes"
+                  value="restaurantes"
+                />
+                <label for="restaurantes">Restaurantes</label>
+              </div>
             </div>
 
             <input type="submit" id="enviar" value="Enviar" />
@@ -179,26 +209,40 @@
     </main>
 
     <footer>
-      <ul class="redes">
-        <li id="ig">
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li id="fb">
-          <a href="https://Facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li id="tw">
-          <a href="https://twitter.com" target="_blank">Twitter</a>
-        </li>
-      </ul>
-      <div class="derechos">
-        <p>
-          © 2023
-          <span lang="en">Charlotte Regional Visitors Authority.</span> Todos
-          los derechos reservados
-        </p>
+      <div>
+        <div>
+          <ul class="redes">
+            <li id="ig">
+              <a href="https://instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li id="fb">
+              <a href="https://Facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li id="tw">
+              <a href="https://twitter.com" target="_blank">Twitter</a>
+            </li>
+          </ul>
+          <p>
+            © 2023
+            <span lang="en">Charlotte Regional Visitors Authority.</span> Todos
+            los derechos reservados
+          </p>
+        </div>
+        <div class="datos">
+          <ul>
+            <li>Jetzer Joel Ramírez Suárez</li>
+            <li>Maquetado y desarrollo web</li>
+            <li>Prof. Mabel García</li>
+            <li>
+              Sitio web desarrollado para entrega como Final de clase cursada el
+              primer cuatrimestre de 2022
+            </li>
+            <li>Escuela Davinci - Marzo, 2023 | DWM1C</li>
+          </ul>
+        </div>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
